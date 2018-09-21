@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Kviz</title>
+        <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif|Teko" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/kviz.css" />
+    </head>
+    <body>
+        <a href="info.html" style="font-size:40px;margin-left:80px;text-decoration:none;color:#f1103a;font-family:IBM Plex Serif, sans-serif;"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i>   Nazad</a>
+        <center>
+            <table>
+                <tr>
+                    <td>
+                        <div>
+                            <p class="question">Da li se 1 smatra prostim brojem?</p>
+                            
+                            <ul>
+
+                                <input class="answer move" type="radio" name="q1" value="1">
+                                <label id="correctString1">Ne</label>
+                                <br>
+                                <input class="answer move" type="radio" name="q1" value="0">
+                                <label>Da</label>
+
+                            </ul>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <p class="question">Koliko prostih brojeva postoji?</p>
+
+                            <ul>
+
+                                <input class="answer" type="radio" name="q2" value="0">
+                                <label>168</label>
+                                <br>
+                                <input class="answer" type="radio" name="q2" value="1">
+                                <label id="correctString2">Beskonacno mnogo</label>
+                                <br>
+                                <input class="answer" type="radio" name="q2" value="0">
+                                <label>1000</label>
+
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>
+                            <p class="question">Koliko cifara ima najveci prosti broj otkriven do sad?</p>
+
+                            <ul>
+                                <input class="answer" type="radio" name="q3" value="0">
+                                <label>Vise od 49 miliona cifara</label>
+                                <br>
+                                <input class="answer" type="radio" name="q3" value="1">
+                                <label id="correctString3">Vise od 22 miliona cifara</label>
+                                <br>
+                                <input class="answer" type="radio" name="q3" value="0">
+                                <label>Priblizno 15 miliona cifara</label>
+                                <br>
+                                <input class="answer" type="radio" name="q3" value="0">
+                                <label>1 milion cifara</label>
+                            </ul>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <p class="question">Kako se naziva metod pronalaska svih prostih brojeva do nekog broja N?</p>
+
+                            <ul>
+                                <input class="answer" type="radio" name="q4" value="0">
+                                <label>Euklidovi elementi</label>
+                                <br>
+                                <input class="answer" type="radio" name="q4" value="1">
+                                <label id="correctString4">Erastotenovo sito</label>
+                                <br>
+                                <input class="answer" type="radio" name="q4" value="0">
+                                <label>Teorema aritmetike</label>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <br/>
+            <div class="submitter">
+                <input class="quizSubmit" id="submitButton" onClick="submitQuiz()"
+                type="submit" value="Provjeri" />
+            </div>
+            <div class="quizAnswers" id="correctAnswer1"></div>
+            <div class="quizAnswers" id="correctAnswer2"></div>
+            <div class="quizAnswers" id="correctAnswer3"></div>
+            <div class="quizAnswers" id="correctAnswer4"></div>
+            <div>
+                <h2 class="quizScore" id="userScore"></h2>
+            </div>
+            <script src="js/kviz.js"></script>
+            <script src="https://use.fontawesome.com/f4d6c7a263.js"></script>
+        </center>
+    </body>
+</html>
